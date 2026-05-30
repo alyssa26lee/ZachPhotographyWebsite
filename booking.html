@@ -1,7 +1,8 @@
 <!DOCTYPE html>
+
 <html>
 <head>
-  <title>Contact | Zach Williams Photography</title>
+  <title>Booking | Zach Williams Photography</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,32 +19,89 @@
 </header>
 
 <section class="page-hero">
-  <h2>Booking</h2>
-  <p>Ready to book a session? Send me a message below.</p>
+  <h2>Book a Session</h2>
+  <p>I'd love to capture your special moments. Fill out the form below and I'll get back to you soon!</p>
 </section>
 
 <section>
-  <form class="contact-section">
-    <label>Name</label>
-    <input type="text" placeholder="Your name">
+  <form
+    class="contact-section"
+    action="https://formsubmit.co/lee.alyssa2615@gmail.com"
+    method="POST">
 
-    <label>Email</label>
-    <input type="email" placeholder="Your email">
+<!-- FormSubmit Settings -->
+<input type="hidden" name="_subject" value="New Photography Booking Inquiry">
+<input type="hidden" name="_captcha" value="false">
 
-    <label>Session Type</label>
-    <select>
-      <option>Mini Session</option>
-      <option>Standard Session</option>
-      <option>Premium Session</option>
-      <option>Other</option>
-    </select>
+<label>Name</label>
+<input
+  type="text"
+  name="Name"
+  placeholder="Your name"
+  required>
 
-    <label>Message</label>
-    <textarea placeholder="Tell me about what you are looking for..."></textarea>
+<label>Email</label>
+<input
+  type="email"
+  name="Email"
+  placeholder="Your email"
+  required>
 
-    <button type="submit">Send Message</button>
+<label>Phone Number</label>
+<input
+  type="tel"
+  name="Phone"
+  placeholder="(123) 456-7890">
+
+<label>Session Type</label>
+<select name="Session Type">
+  <option>College Graduate</option>
+  <option>Couples</option>
+  <option>Engagement</option>
+  <option>Family</option>
+  <option>High School Senior</option>
+  <option>Ring Day</option>
+  <option>Other</option>
+</select>
+
+<label>Preferred Session Date</label>
+<input
+  type="date"
+  name="Preferred Date">
+
+<label>Message</label>
+<textarea
+  name="Message"
+  placeholder="Tell me about your session, location ideas, dates, or any questions..."
+  required></textarea>
+
+<button type="submit">Send Message</button>
+
   </form>
 </section>
+
+<footer class="footer">
+  <div class="footer-content">
+    <h3>Contact Me</h3>
+
+<div class="footer-contact">
+  <p>zwilliamstk421@gmail.com</p>
+  <p>(979) 807-4690</p>
+  <p>College Station, Texas</p>
+</div>
+
+<div class="footer-social">
+  <a href="https://www.instagram.com/zachs_photos/" target="_blank">
+    Instagram
+  </a>
+</div>
+
+<p class="copyright">
+  © 2026 Zach Williams Photography. All Rights Reserved.
+</p>
+
+  </div>
+</footer>
 
 </body>
 </html>
