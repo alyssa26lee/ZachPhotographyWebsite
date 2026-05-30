@@ -149,19 +149,23 @@ section {
 
 /* PRICING PAGE */
 
+/* PRICING PAGE */
+
 .pricing-page {
   display: flex;
   justify-content: center;
+  align-items: stretch;
   gap: 25px;
-  flex-wrap: wrap;
-  max-width: 1000px;
+  flex-wrap: nowrap;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
 .price-card {
   background: white;
   padding: 30px;
-  width: 260px;
+  width: 300px;
+  min-height: 250px;
   border-radius: 14px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
